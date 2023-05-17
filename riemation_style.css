@@ -1,0 +1,122 @@
+
+
+.animateable.hidden{
+    animation: riemation_fadeOut 0.5s forwards;
+    animation-duration: 0.5s;
+}
+
+.animateable.popup{
+    opacity: 0;
+    animation-name: riemation_popup;
+    animation-fill-mode: forwards;
+
+}
+
+.animateable.fadeIn{
+    opacity: 0;
+    animation-name: riemation_fadeIn;
+    animation-fill-mode: forwards;
+}
+
+.animateable.slideUp{
+    opacity: 0;
+    animation-name: riemation_slideUp;
+    animation-fill-mode: forwards;
+}
+
+.animateable.slideLeft{
+    opacity: 0;
+    animation-name: riemation_slideLeft;
+    animation-fill-mode: forwards;
+}
+
+.animateable.slideRight{
+    opacity: 0;
+    animation-name: riemation_slideRight;
+    animation-fill-mode: forwards;
+}
+
+/* ==== PRE INIT ANIMATIONS ==== */
+
+
+/** POP UP ANIMATION  **/
+@keyframes riemation_popup {
+    0%{
+        opacity: 0;
+        scale: 0;
+    }
+
+    50%{
+        opacity: 1;
+        scale: 1.1;
+    }
+
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/** FADE IN ANIMATION  **/
+@keyframes riemation_fadeIn {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/** FADE OUT ANIMATION  **/
+@keyframes riemation_fadeOut{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/** SLIDE UP ANIMATION  **/
+@keyframes riemation_slideUp {
+
+    0%{
+        opacity: 0;
+        translate: 0 5rem;
+    }
+
+    100%{
+        opacity: 1;
+        translate: 0;
+    }
+}
+
+/** SLIDE LEFT ANIMATION  **/
+@keyframes riemation_slideLeft {
+
+    0%{
+        opacity: 0;
+        translate: 5rem 0rem;
+    }
+
+    100%{
+        opacity: 1;
+        translate: 0;
+    }   
+}
+
+/** SLIDE RIGHT ANIMATION  **/
+@keyframes riemation_slideRight {
+
+    0%{
+        opacity: 0;
+        translate: -5rem 0rem;
+    }
+
+    100%{
+        opacity: 1;
+        translate: 0;
+    }
+}
